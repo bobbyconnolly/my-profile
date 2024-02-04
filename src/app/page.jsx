@@ -31,9 +31,7 @@ export default function Home() {
 
     return (
         <section className={styles.section}>
-            <h1 className={styles.title}>
-                Welcome to Bobby Connolly&apos;s website!
-            </h1>
+            <h1 className={styles.title}>Welcome to Bobby&apos;s website!</h1>
             <p className={styles.text}>
                 My journey with computers started in the late-80s/early-90s and
                 was inspired by my father, an ophthalmologist with a passion for

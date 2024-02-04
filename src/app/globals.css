@@ -1,7 +1,7 @@
 :root {
-    --foreground-rgb: rgb(52, 51, 50);
-    --background-rgb: rgb(254, 254, 254);
-    --active-link-rgb: rgb(16, 84, 94);
+    --foreground-rgb: rgb(255, 255, 255);
+    --background-rgb: rgb(122, 109, 147);
+    --active-link-rgb: rgb(255, 255, 255);
     --nav-bubble-rgb: rgb(244, 244, 244);
 }
 

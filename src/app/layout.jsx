@@ -2,7 +2,6 @@ import clsx from "classnames"
 import localFont from "@next/font/local"
 
 import Logo from "@/components/logo"
-import Navbar from "@/components/navbar"
 import "./globals.css"
 
 import styles from "./layout.module.css"
@@ -16,10 +15,10 @@ const kaisei = localFont({
 })
 
 export const metadata = {
-    title: "Bobby Connolly",
+    title: "Bobby's website",
     charset: "UTF-8",
     viewport: "width=device-width, initial-scale=1.0",
-    description: "Bobby's personal website.",
+    description: "",
     keywords: "personal, website",
     author: MY_NAME,
     icons: {
@@ -48,9 +47,9 @@ export default function RootLayout({ children }) {
                     <div className={clsx(styles.logo, styles["grid-item"])}>
                         <Logo />
                     </div>
-                    <div className={clsx(styles.navbar, styles["grid-item"])}>
+                    {/* <div className={clsx(styles.navbar, styles["grid-item"])}>
                         <Navbar />
-                    </div>
+                    </div> */}
                     <main className={clsx(styles.main, styles["grid-item"])}>
                         {children}
                     </main>

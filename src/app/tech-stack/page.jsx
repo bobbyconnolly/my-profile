@@ -29,7 +29,7 @@ const techStack = [
 export default function MyTechStack() {
     return (
         <section className={styles.section}>
-            <ul className={styles.list}>
+            {/* <ul className={styles.list}>
                 {techStack.map((tech) => (
                     <a
                         key={tech.key}
@@ -55,7 +55,7 @@ export default function MyTechStack() {
                         </li>
                     </a>
                 ))}
-            </ul>
+            </ul> */}
         </section>
     )
 }
