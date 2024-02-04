@@ -31,13 +31,14 @@ export default function Home() {
 
     return (
         <section className={styles.section}>
-            <h1 className={styles.title}>Welcome to Bobby&apos;s World!</h1>
+            <h1 className={styles.title}>
+                Welcome to Bobby Connolly&apos;s website!
+            </h1>
             <p className={styles.text}>
-                Hi there! I&apos;m Bobby Connolly. My journey with computers
-                started in the mid-80s, inspired by my father, an
-                ophthalmologist with a passion for technology. I witnessed the
-                birth of the internet in the 90s and have been fascinated by
-                programming and technological innovations ever since.
+                My journey with computers started in the late-80s/early-90s and
+                was inspired by my father, an ophthalmologist with a passion for
+                technology. With him, I witnessed the birth of the internet and
+                have been fascinated by programming and technology ever since.
             </p>
             <div className={styles.imageWrapper}>
                 <Image
