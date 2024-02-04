@@ -14,11 +14,17 @@ export default function Home() {
     const [clicked, setClicked] = useState(false)
 
     const copyEmailToClipboard = () => {
-        navigator.clipboard.writeText(MY_EMAIL)
-        setClicked(true)
-        setTimeout(() => setClicked(false), 1000)
+        // Directly within the user-initiated event
+        navigator.clipboard
+            .writeText(MY_EMAIL)
+            .then(() => {
+                setClicked(true)
+                setTimeout(() => setClicked(false), 1000) // Reset after 1 second
+            })
+            .catch((err) => {
+                console.error("Failed to copy: ", err)
+            })
     }
-
     useEffect(() => {
         const fetchData = async () => {
             try {

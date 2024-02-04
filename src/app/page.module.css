@@ -34,7 +34,10 @@
 }
 
 .email {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
     margin: 0 auto 3rem auto;
     padding: 0.5rem;
     text-align: center;
@@ -53,11 +56,5 @@
     }
     to {
         background-color: var(--background-rgb);
-    }
-}
-
-@media (max-width: 768px) {
-    .section {
-        padding: 0 1rem;
     }
 }
