@@ -12,7 +12,7 @@ export default function Home() {
     const copyEmailToClipboard = () => {
         navigator.clipboard.writeText(MY_EMAIL)
         setClicked(true)
-        setTimeout(() => setClicked(false), 1000) // remove the 'clicked' class after 1 seconds
+        setTimeout(() => setClicked(false), 1000)
     }
 
     useEffect(() => {
@@ -31,13 +31,13 @@ export default function Home() {
 
     return (
         <section className={styles.section}>
-            <h1 className={styles.title}>Welcome to Bobby's World!</h1>
+            <h1 className={styles.title}>Welcome to Bobby&apos;s World!</h1>
             <p className={styles.text}>
-                Hi there! I'm Bobby Connolly. My journey with computers started
-                in the mid-80s, inspired by my father, an ophthalmologist with a
-                passion for technology. I witnessed the birth of the internet in
-                the 90s and have been fascinated by programming and
-                technological innovations ever since.
+                Hi there! I&apos;m Bobby Connolly. My journey with computers
+                started in the mid-80s, inspired by my father, an
+                ophthalmologist with a passion for technology. I witnessed the
+                birth of the internet in the 90s and have been fascinated by
+                programming and technological innovations ever since.
             </p>
             <div className={styles.imageWrapper}>
                 <Image
@@ -51,10 +51,10 @@ export default function Home() {
                 </p>
             </div>
             <p className={styles.text}>
-                My father's venture, Systèmes Santé ACL, revolutionized medical
-                billing in Quebec with software he developed. Following in his
-                footsteps, I reprogrammed his software using VB .NET in the
-                mid-2000s, a version still in use today!
+                My father&apos;s venture, Systèmes Santé ACL, revolutionized
+                medical billing in Quebec with software he developed. Following
+                in his footsteps, I reprogrammed his software using VB .NET in
+                the mid-2000s, a version still in use today!
             </p>
             <p className={styles.text}>
                 As a current Computer Science teacher at Champlain College
@@ -82,10 +82,10 @@ export default function Home() {
                 their future careers.
             </p>
             <p className={styles.text}>
-                On my website, you'll find a portfolio showcasing my work, a
-                blog with my thoughts and insights, and ways to connect with me.
-                Whether you're interested in programming, AI, or just want to
-                say hi, feel free to explore and reach out!
+                On my website, you&apos;ll find a portfolio showcasing my work,
+                a blog with my thoughts and insights, and ways to connect with
+                me. Whether you&apos;re interested in programming, AI, or just
+                want to say hi, feel free to explore and reach out!
             </p>
             <p
                 className={clsx(styles.email, { [styles.clicked]: clicked })}
