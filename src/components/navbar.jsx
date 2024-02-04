@@ -24,16 +24,16 @@ const navItems = {
         desktop: [29, 1], // x, y
         width: 61,
     },
-    "/about": {
-        name: "about",
-        mobileX: 69,
-        desktop: [29, 41], // x, y
-        width: 63,
-    },
+    // "/about": {
+    //     name: "about",
+    //     mobileX: 69,
+    //     desktop: [29, 41], // x, y
+    //     width: 63,
+    // },
     "/tech-stack": {
         name: "technologies",
         mobileX: 137,
-        desktop: [1, 82], // x, y
+        desktop: [1, 41], // x, y
         width: 116,
     },
 }
