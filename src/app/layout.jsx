@@ -16,10 +16,10 @@ const kaisei = localFont({
 })
 
 export const metadata = {
-    title: "My Personal Website",
+    title: "Bobby Connolly",
     charset: "UTF-8",
     viewport: "width=device-width, initial-scale=1.0",
-    description: "This is my personal website.",
+    description: "Bobby's personal website.",
     keywords: "personal, website",
     author: MY_NAME,
     icons: {

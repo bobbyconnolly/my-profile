@@ -24,12 +24,6 @@ const navItems = {
         desktop: [29, 1], // x, y
         width: 61,
     },
-    // "/about": {
-    //     name: "about",
-    //     mobileX: 69,
-    //     desktop: [29, 41], // x, y
-    //     width: 63,
-    // },
     "/tech-stack": {
         name: "technologies",
         mobileX: 137,
