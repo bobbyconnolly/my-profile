@@ -31,28 +31,37 @@
     grid-row: 3;
 }
 
+/* Styles for viewports between 490px and 768px */
+@media (min-width: 490px) and (max-width: 767px) {
+    .grid-container {
+        padding: 3rem 3rem;
+    }
+
+    /* Add other specific styles for elements within this viewport range */
+}
+
 /* desktop version */
 @media (min-width: 768px) {
     .grid-container {
-        margin: 0 auto; /* Centers the grid horizontally */
-        max-width: 768px; /* Sets the maximum width, adjust as needed */
+        margin: 0 auto;
+        max-width: 768px;
 
-        grid-template-columns: 8rem auto; /* Left column fixed, right column flexible */
-        grid-template-rows: 1fr auto; /* Two rows: one flexible, one automatic */
+        grid-template-columns: 8rem auto;
+        grid-template-rows: 1fr auto;
 
         padding-top: 3rem;
     }
 
     .logo {
         grid-column: 1;
-        grid-row: 1 / 2; /* Span from row 1 to 2 */
+        grid-row: 1 / 2;
 
         justify-content: center;
     }
 
     .navbar {
         grid-column: 1;
-        grid-row: 2 / 3; /* Span from row 2 to 3 */
+        grid-row: 2 / 3;
 
         justify-content: center;
     }
@@ -61,7 +70,7 @@
         padding-top: 1.33rem;
 
         grid-column: 2;
-        grid-row: 1 / 3; /* Span from row 1 to 3, taking up the entire right column */
+        grid-row: 1 / 3;
 
         justify-content: flex-start;
     }
