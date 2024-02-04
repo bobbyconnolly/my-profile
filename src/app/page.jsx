@@ -5,8 +5,12 @@ import { useEffect, useState } from "react"
 import { MY_EMAIL } from "@/app/globals"
 import styles from "./page.module.css"
 import Image from "next/image"
+import { useWindowWidth } from "./useWindowWidth"
 
 export default function Home() {
+    const windowWidth = useWindowWidth()
+    const isMobile = windowWidth < 768 // Adjust the breakpoint as needed
+
     const [clicked, setClicked] = useState(false)
 
     const copyEmailToClipboard = () => {
@@ -31,7 +35,9 @@ export default function Home() {
 
     return (
         <section className={styles.section}>
-            <h1 className={styles.title}>Welcome to Bobby&apos;s website!</h1>
+            <h1 className={styles.title}>
+                {isMobile ? "Bobby's website" : "Welcome to Bobby's website!"}
+            </h1>
             <p className={styles.text}>
                 My journey with computers started in the late-80s/early-90s and
                 was inspired by my father, an ophthalmologist with a passion for
@@ -42,8 +48,10 @@ export default function Home() {
                 <Image
                     src="/images/dad-and-me.png"
                     alt="Picture of me and my dad"
-                    width={456}
-                    height={300}
+                    layout="responsive"
+                    width={456} // Original aspect ratio width
+                    height={300} // Original aspect ratio height
+                    objectFit="contain" // Optional, maintains aspect ratio
                 />
                 <p className={styles.imageCaption}>
                     A young Bobby with his dad in front of the computer.
@@ -89,7 +97,6 @@ export default function Home() {
             <p
                 className={clsx(styles.email, { [styles.clicked]: clicked })}
                 onClick={copyEmailToClipboard}
-                style={{ marginBottom: "10rem", marginLeft: "5rem" }}
             >
                 Click to copy my email to your clipboard
             </p>
