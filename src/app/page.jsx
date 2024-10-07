@@ -70,8 +70,7 @@ export default function Home() {
                 the mid-2000s, a version still in use today!
             </p>
             <p className={styles.text}>
-                As a current Computer Science teacher at Champlain College
-                Saint-Lambert, I have embraced generative AI. My approach
+                As a current Computer Science teacher at LaSalle College, I have embraced generative AI. My approach
                 involves utilizing generative AI to craft comprehensive and
                 dynamic assignments, which are then rendered into PDFs for my
                 students. These assignments are meticulously designed to provide
@@ -88,17 +87,9 @@ export default function Home() {
             <p className={styles.text}>
                 My goal is to create a learning environment where structure and
                 creativity coexist, empowering students to excel in both
-                theoretical knowledge and practical application. This blend of
-                traditional teaching with advanced AI tools not only enhances
-                the overall educational experience but also prepares students
-                for the evolving technological landscape they will encounter in
-                their future careers.
-            </p>
-            <p className={styles.text}>
-                On my website, you&apos;ll find a portfolio showcasing my work,
-                a blog with my thoughts and insights, and ways to connect with
-                me. Whether you&apos;re interested in programming, AI, or just
-                want to say hi, feel free to explore and reach out!
+                theoretical knowledge and practical application. A blend of
+                active learning with AI tools improves student engagement 
+                and prepares them for the evolving technological landscape.
             </p>
             <p
                 className={clsx(styles.email, { [styles.clicked]: clicked })}
